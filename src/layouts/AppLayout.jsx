@@ -12,6 +12,7 @@ export default function AppLayout() {
         <div className="flex-1">
           <Outlet />
         </div>
+        
         <footer className="bg-amber-100 flex flex-col gap-y-6 justify-center content-center text-center">
           <p> footer prron</p>
           <p> hola soy otro pa</p>
