@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import SaludoComponent from '../components/SaludoComponent'
 import CardChildren from '../components/CardChildren'
@@ -70,6 +70,12 @@ export default function AppView() {
   const reiniciarContador = () => {
     setContador(0)
   }
+  {/* useEffect se usa mas que nada para las solicitudes de api o para lo de los estados */}
+  useEffect(() => {
+    console.log("Este es el useEffect ejecuntandose")
+  }, [isTrue]
+    
+  )
 
 
   return (
